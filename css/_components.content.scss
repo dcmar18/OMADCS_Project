@@ -1,12 +1,12 @@
 body{
-  background-color: $darkgray;
+  background-color: $white;
 }
 
 .template-hook {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $darkgray;
+  color: $white;
   }
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -14,13 +14,11 @@ body{
   background-color: transparent;
   width: 300px;
   height: 300px;
-  margin: 0.1rem;
   color:blacK;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  :hover{
-    transform: scale(1.5);
-  }
+  margin: 2rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
 }
 
 /* This container is needed to position the front and back side */
@@ -35,8 +33,8 @@ body{
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-  
+  transform: rotateY(180deg) scale(1.3);
+  box-shadow: 10px 10px 5px #aaaaaa;
 
 }
 
@@ -56,6 +54,7 @@ body{
   img{
     height:300px;
   }
+  box-shadow: 10px 10px 5px #aaaaaa
 }
 
 /* Style the back side */
@@ -65,8 +64,10 @@ body{
   color: White;
   transform: rotateY(180deg);
   p{
+    font-size: 12px;
     width: 100%;
-    height: 180px;
-    overflow: scroll;
+    height: 170px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }

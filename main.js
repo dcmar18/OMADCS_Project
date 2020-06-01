@@ -146,11 +146,11 @@ const people =[
         `<div class="flip-box">
         <div class="flip-box-inner">
           <div class="flip-box-front">
-            <img src="${el.ImgURl}" alt="Paris" style="width:300px;height:300px">
+            <img src="${el.ImgURl}" alt="Picture of ${el.Name}" style="width:300px;height:300px">
           </div>
           <div class="flip-box-back">
-            <h2>${el.Name}</h2>
-            <h3>${el.Status}</h3>
+            <h3>${el.Name}</h3>
+            <h6>${el.Status}</h6>
             <p>${el.Narrative}</p>
       </div>`;
       return person;
